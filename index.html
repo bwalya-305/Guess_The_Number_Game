@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, h1 {
+            font-family: 'Black Ops One', cursive;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="container mt-5" style="font-size: 40px">Guess the Number Game</h1>
+        <p class="lead" style="font-size: 20px">Guess a number between 1 and 100:</p>
+            <input type="number" id="guess" min="1" max="100" style="text-align: center">
+            <button id="submitButton" class="btn btn-primary" onclick="checkGuess()">Submit Guess</button>
+                <p id="message"></p>
+                <p id="attempts"></p>
+                <p id="highScore"></p>
+                <p class="text-info" id="timer"></p>
+            <button id="startButton" class="btn btn-primary" onclick="startGame()">Start Game</button>
+            <button id="stopButton" class="btn btn-danger" onclick="stopGame()" style="display: none;">Stop Game</button>
+            <button id="restartButton" class="btn btn-secondary" onclick="restartGame()">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
